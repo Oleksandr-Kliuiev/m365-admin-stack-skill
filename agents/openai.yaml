@@ -1,0 +1,4 @@
+interface:
+  display_name: "M365 Admin Stack"
+  short_description: "Install and verify Codex Microsoft 365 tooling"
+  default_prompt: "Use $m365-admin-stack to install and verify the Microsoft 365 admin stack on this machine."

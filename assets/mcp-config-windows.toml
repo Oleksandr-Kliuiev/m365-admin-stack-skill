@@ -1,0 +1,26 @@
+[mcp_servers.m365]
+command = "__NPX_CMD_PATH__"
+args = ["-y", "@pnp/cli-microsoft365-mcp-server@__MCP_VERSION__"]
+enabled = true
+required = false
+startup_timeout_sec = 30
+tool_timeout_sec = 120
+enabled_tools = [
+  "m365_search_commands",
+  "m365_get_command_docs",
+  "m365_get_best_practices",
+  "m365_run_command",
+]
+default_tools_approval_mode = "prompt"
+
+[mcp_servers.m365.tools.m365_search_commands]
+approval_mode = "approve"
+
+[mcp_servers.m365.tools.m365_get_command_docs]
+approval_mode = "approve"
+
+[mcp_servers.m365.tools.m365_get_best_practices]
+approval_mode = "approve"
+
+[mcp_servers.m365.tools.m365_run_command]
+approval_mode = "prompt"
